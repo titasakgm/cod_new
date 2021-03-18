@@ -1,0 +1,43 @@
+<!-- natural > cardio-->
+
+<div id="cardio" class="org2 none">
+  <div id="cardio0" class="form-group org">
+    <label class="col-md-4 control-label">เคยรักษาโรค / มีโรคประจำตัว</label>
+    <table border="0">
+      <tr>
+        <th class="yn"><span class="hover01 column"><figure><img class="yesno" id="org2-yes" src="/assets/yes.png"/></figure></span></th>
+        <th class="yn"><span class="hover01 column"><figure><img class="yesno" id="org2-no" src="/assets/no.png"/></figure></span></th>
+        <td><button id="org2" class="btn disabled">โรคเลือด / หลอดเลือด / หัวใจ</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="cardio1" class="form-group org none">
+    <div class="col-md-4 control-label"></div>
+    <div class="col-md-8">  
+      <select class="selectpicker show-tick" id="cd1" name="cd1" value=""
+      data-style="btn-danger" data-width="fit" title="โปรดเลือก"/>
+        <option id='cd-0' value='0'></option>
+        <option id='cd-1' value='1'>ความดันโลหิตสูง</option>
+        <option id='cd-2' value='2'>เส้นเลือดสมองตีบ / แตก / ตัน</option>
+        <option id='cd-3' value='3'>หลอดเลือดหัวใจ</option>
+        <option id='cd-4' value='4'>หัวใจขาดเลือด</option>
+        <option id='cd-5' value='5'>ลิ้นหัวใจรั่ว</option>
+        <option id='cd-6' value='6'>กล้ามเนื้อหัวใจตาย</option>
+        <option id='cd-7' value='7'>เส้นเลือดโป่งพองในช่องท้อง / ช่องอก</option>
+        <option id='cd-8' value='8'>โรคหัวใจอื่นๆ ระบุ ...</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- รายละเอียดเพิ่มเติม ระบุ-->
+  <div id="cardio2" class="form-group org none">
+    <div class="col-md-4 control-label"></div>
+    <div class="col-md-6"> 
+      <input placeholder="รายละเอียดเพิ่มเติม (#cardio2)" type="text" class="form-control" id="cd2" name="cd2">
+    </div>
+    <div class="col-md-2"></div> 
+  </div>
+
+</div>
+

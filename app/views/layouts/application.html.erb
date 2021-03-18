@@ -1,0 +1,73 @@
+#coding: utf-8
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cause of death</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- %= javascript_include_tag "death_utils","guides" % -->
+
+</head>
+<body>
+
+<div class="container">
+  <div class="tab-content clearfix">
+    <div class="tab-pane active" id="detail">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Cause of Death Helper</h3>
+        </div>
+
+        <div class="panel-body">
+          <form class="form-horizontal" id="death_form">
+            <fieldset>
+              <%= yield %>
+            </fieldset>
+
+            <div id="submit" class="form-group none">
+              <label class="col-md-4 control-label"></label>
+              <div class="col-md-8">
+                <input id="processx" type="submit" class="btn btn-primary"
+                value="  ประมวลผลสาเหตุการตาย" 
+                data-toggle="modal" data-target="#myModal" /> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- CAUSE OF DEATH -->
+      <div class="cod">
+        <span class="col-md-4 right">
+        สรุปสาเหตุการตาย
+        </span>
+        <span id="cod_text" class="col-md-8 none">
+        </span>
+      </div>
+
+      <!-- reset button -->
+      <div>
+        <span class="col-md-12 center">
+          <hr/>
+
+          <%= form_for Death.new, url: {controller: "deaths", action: "create"}, html: {id: "id_cod", class: "none", method: "POST"} do |f| %>
+            <%= f.text_field :pid13, :id => "pid13_id" %>
+            <%= f.text_field :sex, :id => "sex_id" %>
+            <%= f.text_field :age, :id => "age_id" %>
+            <%= f.text_field :d_date, :id => "d_date_id" %>
+            <%= f.text_field :d_cod, :id => "d_cod_id" %>
+            <%= f.text_field :cod, :id => "cod_id" %>
+          <% end %>
+
+          <!-- button id="btn_informer" class="btn btn-warning">รายละเอียดผู้แจ้ง</button -->
+          <button class="btn btn-primary" onclick="window.location.href='/'">เริ่มต้นใหม่</button>
+        </span>
+      </div> 
+    </div>
+</div>
+
+</body>
+</html>

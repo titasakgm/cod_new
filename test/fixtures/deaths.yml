@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pid13: MyString
+  sex: MyString
+  age: 
+  d_date: 2021-03-18
+  d_cod: MyString
+  cod: MyString
+
+two:
+  pid13: MyString
+  sex: MyString
+  age: 
+  d_date: 2021-03-18
+  d_cod: MyString
+  cod: MyString

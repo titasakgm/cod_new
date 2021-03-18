@@ -1,0 +1,61 @@
+<!-- unnatural > accident-->
+
+<div id="accident" class="none">
+  <div id="accident0" class="form-group org">
+    <div class="col-md-4 control-label">ประเภทอุบัติเหตุ</div>
+    <div class="col-md-8"> 
+      <select class="selectpicker show-tick" id="ac0" name="ac0" value="" 
+      data-style="btn-info" data-width="fit" title="โปรดเลือก"/>
+        <option id='ac-0' value='0'></option>
+        <option id='ac-1' value='1'>อุบัติเหตุจราจรทางบก #ac-1</option>
+        <option id='ac-2' value='2'>อุบัติเหตุจราจรทางน้ำ</option>
+        <option id='ac-3' value='3'>อุบัติเหตุจมน้ำ</option>
+        <option id='ac-4' value='4'>อุบัติเหตุพลัดตกหกล้ม</option>
+        <option id='ac-5' value='5'>อุบัติเหตุไฟฟ้าช้อต</option>
+        <option id='ac-6' value='6'>อุบัติเหตุไฟไหม้น้ำร้อนลวก</option>
+        <option id='ac-7' value='7'>อุบัติเหตุถูกสารพิษ</option>
+        <option id='ac-8' value='8'>อุบัติเหตุถูกสัตว์ทำร้าย</option>
+        <option id='ac-9' value='9'>อุบัติเหตุถูกของหนักทับ</option>
+        <option id='ac-10' value='10'>อุบัติเหตุถูกของมีคม เช่น ถูกแทง ถูกฟัน</option>
+        <option id='ac-11' value='11'>อุบัติเหตุจากการทำงาน</option>
+        <option id='ac-12' value='12'>อุบัติเหตุอื่นๆ ระบุ #ac-12</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- รายละเอียดเพิ่มเติม ระบุ-->
+  <div id="accident1" class="form-group org none">
+    <label class="col-md-4 control-label" id="ac1" for="ac1">ขณะเกิดเหตุ</label>
+      <span class="col-md-3"> 
+        <label class="radio-inline" for="ac1-1" id="id_ac11">
+          <input type="radio" name="ac1" id="ac1-1" value="1">
+          ผู้ตายเป็นผู้ขับขี่
+          </input>
+        </label>
+      </span>
+      <span class="col-md-3"> 
+        <label class="radio-inline" for="ac1-2" id="id_ac12">
+          <input type="radio" name="ac1" id="ac1-2" value="2">
+          ผู้ตายเป็นผู้โดยสาร
+          </input>
+        </label>
+      </span>
+  </div>
+
+  <div id="accident2" class="form-group org none">
+    <label class="col-md-4 control-label" for="ac2">รายละเอียด</label>
+    <div class="col-md-6"> 
+      <input placeholder="ประเภทรถที่ชนกัน เช่น รถจักรยานยนต์ รถยนต์ รถปิคอัพ รถบรรทุก (#ac2)" type="text" class="form-control"
+      id="ac2" name="ac2">
+    </div>
+  </div>
+
+  <div id="accident3" class="form-group org none">
+    <label class="col-md-4 control-label" for="ac3">อุบัติเหตุอื่นๆ ระบุ...</label>
+    <div class="col-md-6"> 
+      <input placeholder="รายละเอียดเพิ่มเติม (#ac3)" type="text" class="form-control"
+    id="ac3" name="ac3">
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,38 @@
+<!-- Death Type selection (natural / unnatural) -->
+
+<div class="death form-group">
+  <div id="death_type">
+    <label class="col-md-4 control-label" for="death_type">ประเภทการตาย</label>
+    <div class="col-md-8">
+      <div id="natural" class="btn btn-success"
+        data-toggle="tooltip" title="#natural">ป่วย / ตายธรรมชาติ</div>
+      <div id="unnatural" class="btn btn-danger"
+        data-toggle="tooltip" title="#unnatural">ตายผิดธรรมชาติ</div>
+    </div>
+  <div>
+
+  <div id="div_natural" class="col-md-12">
+    <!-- Child age 0-10 -->
+    <%= render "natural/child" %>
+    <!-- Female 10-49 -->
+    <%= render "natural/mother" %>
+
+    <%= render "natural/cancer" %>
+    <%= render "natural/dm" %>
+    <%= render "natural/congen" %>
+    <%= render "natural/hiv" %>
+    <%= render "natural/cardio" %>
+    <%= render "natural/lung" %>
+    <%= render "natural/kidney" %>
+    <%= render "natural/liver" %>
+    <%= render "natural/gitract" %>
+    <%= render "natural/etc" %>
+  </div>
+
+  <div id="div_unnatural" class="col-md-12">
+    <%= render "unnat_category" %>
+    <%= render "accident" %>
+    <%= render "assault" %>
+    <%= render "suicide" %>
+  </div>
+</div>

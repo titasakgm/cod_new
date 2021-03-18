@@ -1,0 +1,2 @@
+class Informer < ApplicationRecord
+end

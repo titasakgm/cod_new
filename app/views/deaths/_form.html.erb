@@ -1,0 +1,41 @@
+<%= form_for(@death) do |f| %>
+  <% if @death.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@death.errors.count, "error") %> prohibited this death from being saved:</h2>
+
+      <ul>
+      <% @death.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pid13 %><br>
+    <%= f.text_field :pid13 %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br>
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :d_date %><br>
+    <%= f.date_select :d_date %>
+  </div>
+  <div class="field">
+    <%= f.label :d_cod %><br>
+    <%= f.text_field :d_cod %>
+  </div>
+  <div class="field">
+    <%= f.label :cod %><br>
+    <%= f.text_field :cod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

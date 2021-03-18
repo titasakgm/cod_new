@@ -1,0 +1,70 @@
+<!-- natural > child -->
+
+<!-- child detail (ch) 0-10 year-->
+<div id="child" class="none">
+
+  <div class="form-group org">
+    <label class="col-md-4 control-label" for="ch0">เกี่ยวข้องกับการคลอดหรือไม่</label>
+    <span class="col-md-2">
+      <label class="radio-inline" for="ch0">
+        <input type="radio" name="ch0" id="ch-0" value="0">
+        ไม่เกี่ยวข้อง
+        </input>
+      </label>
+    </span>
+    <span class="col-md-2">
+      <label class="radio-inline" for="ch-1">
+        <input type="radio" name="ch0" id="ch-1" value="1">
+        เกี่ยวข้อง
+        </input>
+      </label>
+    </span>
+  </div>
+
+  <div id="child1" class="form-group org none">
+    <label class="col-md-4 control-label" for="ch1">เด็กคลอดเมื่อแม่ตั้งครรภ์ได้กี่เดือน ?</label>
+    <div class="col-md-4">
+      <select id="ch1" name="ch1" class="selectpicker show-tick">
+        <option value="0"></option>
+        <option value="4">น้อยกว่า 5 เดือน</option>
+        <option value="5">5 เดือน</option>
+        <option value="6">6 เดือน</option>
+        <option value="7">7 เดือน</option>
+        <option value="8">8 เดือน</option>
+        <option value="9">9 เดือน</option>
+        <option value="10">ไม่ทราบ / ไม่แน่ใจ</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="child2" class="form-group org none">
+    <label class="col-md-4 control-label" for="ch2">สอบถามเพิ่มเติมพบว่า</label>
+    <div class="col-md-4">
+      <select id="ch2" name="ch2" class="selectpicker" multiple>
+        <option value="00"></option>
+        <option value="01" data-subtext="คลอดก่อนกำหนด">01</option>
+        <option value="02" data-subtext="คลอดน้ำหนักน้อยกว่า 3000 กรัม">02</option>
+        <option value="03" data-subtext="รกลอกตัวก่อนกำหนด">03</option>
+        <option value="04" data-subtext="สายสะดือพันคอ">04</option>
+        <option value="05" data-subtext="ขาดอ๊อกซิเจนระหว่างคลอด หรือหลังคลอด">05</option>
+        <option value="06" data-subtext="ติดเชื้อสายสะดือระหว่างคลอด หรือหลังคลอด">06</option>
+        <option value="07" data-subtext="สำลักน้ำคร่ำ">07</option>
+        <option value="08" data-subtext="คลอดครรภ์แฝดหรือมีเด็กมากกว่า 1 คน">08</option>
+        <option value="09" data-subtext="คลอดท่าผิดปกติ เช่น คลอดท่าก้น คลอดท่าขวาง">09</option>
+        <option value="10" data-subtext="ติดเชื้อเอดส์จากแม่">10</option>
+        <option value="11" data-subtext="ปอดบวม">11</option>
+        <option value="12" data-subtext="พิการแต่กำเนิด ระบุ ...">12</option>
+        <option value="13" data-subtext="โรคอื่นๆ ระบุ ...">13</option>
+        <option value="14" data-subtext="ไม่ทราบ / ไม่แน่ใจ">14</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="child3" class="form-group org none">
+    <label class="col-md-4 control-label" for="ch3">รายละเอียดเพิ่มเติม</label>
+    <div class="col-md-4">
+      <input placeholder="รายละเอียดเพิ่มเติม (#child3 ch3)" type="text" class="form-control input-md" id="ch3" name="ch3" >
+    </div>
+  </div>
+
+</div>

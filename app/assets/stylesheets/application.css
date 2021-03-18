@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require font-awesome
+ *= require_self
+ *= require_tree .
+ */
+
+.panel {
+  margin-top: 20px;
+}
+
+.panel-title {
+  text-align: center;
+  font-size: 1.5em !important;
+}
+
+.none {
+  display: none;
+}
+
+.ui-datepicker {
+    /*background: transparent;*/
+    background: #E3F6CE;
+}
+
+.ui-widget-content .ui-icon {
+    background-image: url("/assets/ui-icons_222222_256x240.png")      
+    !important;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("/assets/ui-icons_222222_256x240.png")   
+    !important;
+}
+
+.hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.yn {
+  width: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img.yesno {
+  width: 32px;
+  height: 32px;
+}
+
+.bootstrap-select {
+  margin-top: 10px;
+}
+
+.datepicker {
+  width: 150px !important;
+}
+
+#cancer3 {
+  padding-top: 10px !important;
+  margin-top: 10px !important;
+  padding-left: 15px;
+}
+
+button.active {
+  background-color: #5cb85c !important;
+  color: white !important; 
+}
+
+#unnat_category {
+  padding-top: 10px !important;
+}
+
+.unn1 {
+  margin-top: 0px;
+}
+
+#ac3 {
+  margin-top: 10px;
+}
+
+.top25 {
+  padding-top: 6px !important;
+  padding-left: 0px !important;
+}
+
+.right {
+  text-align: right;
+}
+
+#process_text {
+  margin-left: 50px;
+}
+
+span#cod_text {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+#register {
+  background-color: yellow;
+  margin-top: 18px;
+}

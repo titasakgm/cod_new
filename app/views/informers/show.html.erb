@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @informer.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @informer.lname %>
+</p>
+
+<%= link_to 'Edit', edit_informer_path(@informer) %> |
+<%= link_to 'Back', informers_path %>

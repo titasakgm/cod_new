@@ -1,0 +1,37 @@
+<h1>Listing deaths</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pid13</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>D date</th>
+      <th>D cod</th>
+      <th>Cod</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deaths.each do |death| %>
+      <tr>
+        <td><%= death.pid13 %></td>
+        <td><%= death.sex %></td>
+        <td><%= death.age %></td>
+        <td><%= death.d_date %></td>
+        <td><%= death.d_cod %></td>
+        <td><%= death.cod %></td>
+        <td><%= link_to 'Show', death %></td>
+        <td><%= link_to 'Edit', edit_death_path(death) %></td>
+        <td><%= link_to 'Destroy', death, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Death', new_death_path %>

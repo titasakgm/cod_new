@@ -1,0 +1,25 @@
+<%= form_for(@informer) do |f| %>
+  <% if @informer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@informer.errors.count, "error") %> prohibited this informer from being saved:</h2>
+
+      <ul>
+      <% @informer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fname %><br>
+    <%= f.text_field :fname %>
+  </div>
+  <div class="field">
+    <%= f.label :lname %><br>
+    <%= f.text_field :lname %>
+  </div>
+  <div class="actions">
+    <%= f.submit "บันทึกข้อมูล", class: "btn btn-success" %>
+  </div>
+<% end %>

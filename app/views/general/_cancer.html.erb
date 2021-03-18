@@ -1,0 +1,50 @@
+<!-- natural > cancer-->
+
+<div id="cancer" class="org1 none">
+  <div id="cancer0" class="form-group org">
+    <label class="col-md-4 control-label" for="button1id">เคยรักษาโรค / มีโรคประจำตัว</label>
+    <table border="0">
+      <tr>
+        <th class="yn"><span class="hover01 column"><figure><img class="yesno" id="org1-yes" src="/assets/yes.png"/></figure></span></th>
+        <th class="yn"><span class="hover01 column"><figure><img class="yesno" id="org1-no" src="/assets/no.png"/></figure></span></th>
+        <td><button id="org1" name="cancer" class="btn">โรคมะเร็ง</button></td>
+      </tr>
+      <tr id="ca" class="ca none">
+        <td colspan="3">
+          <div>
+            <select class="selectpicker" id="cancer" name="ca" value="" 
+            data-style="btn-danger" title="โปรดเลือก"/>
+              <option id='ca-0' value='0'></option>
+              <option id='ca-1' value='1'>มะเร็งเต้านม</option>
+              <option id='ca-2' value='2'>มะเร็งปากมดลูก</option>
+              <option id='ca-3' value='3'>มะเร็งมดลูก</option>
+              <option id='ca-4' value='4'>มะเร็งรังไข่</option>
+              <option id='ca-5' value='5'>มะเร็งต่อมลูกหมาก</option>
+              <option id='ca-6' value='6'>มะเร็งตับ</option>
+              <option id='ca-7' value='7'>มะเร็งตับอ่อน</option>
+              <option id='ca-8' value='8'>มะเร็งปอด</option>
+              <option id='ca-9' value='9'>มะเร็งกระเพาะอาหาร</option>
+              <option id='ca-10' value='10'>มะเร็งลำไส้ (ลำไส้เล็ก / ลำไส้ใหญ่)</option>
+              <option id='ca-11' value='11'>มะเร็งกระเพาะปัสสาวะ</option>
+              <option id='ca-12' value='12'>มะเร็งบริเวณคอ (ลิ้น เหงือก หลอดคอ กล่องเสียง)</option>
+              <option id='ca-13' value='13'>มะเร็งสมอง</option>
+              <option id='ca-14' value='14'>มะเร็งกระดูก</option>
+              <option id='ca-15' value='15'>มะเร็งเม็ดเลือด</option>
+              <option id='ca-16' value='16'>มะเร็งต่อมน้ำเหลือง</option>
+              <option id='ca-17' value='17'>มะเร็งผิวหนัง</option>
+              <option id='ca-18' value='18'>มะเร็งอวัยวะอื่นๆ ระบุ ...</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- รายละเอียดเพิ่มเติม ระบุ-->
+    <div id="ca-detail" class="form-group org none">
+      <div class="col-md-8"> 
+        <input placeholder="รายละเอียดเพิ่มเติม (#cadetail)" type="text" class="form-control"
+        id="cadetail" name="cadetail">
+      </div>
+    </div>
+  </div>
+</div>

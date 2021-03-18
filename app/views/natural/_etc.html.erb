@@ -1,0 +1,40 @@
+<!-- natural > etc -->
+
+<div id="etc" class="org10 none">
+  <div id="etc0" class="form-group org">
+    <label class="col-md-4 control-label">เคยรักษาโรค / มีโรคประจำตัว</label>
+    <table border="0">
+      <tr>
+        <th class="yn"><span class="hover01 column"><figure><img class="yesno" id="org10-yes" src="/assets/yes.png"/></figure></span></th>
+        <th class="yn"><span class="hover01 column"><figure><img class="yesno" id="org10-no" src="/assets/no.png"/></figure></span></th>
+        <td><button id="org10" class="btn disabled">โรคอื่นๆ</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="etc1" class="form-group org none">
+    <div class="col-md-4 control-label"></div>
+    <div class="col-md-8">
+      <select class="selectpicker show-tick" id="et1" name="et1" value=""
+      data-style="btn-danger" data-width="fit" title="โปรดเลือก"/>
+        <option id='et-0' value='0'></option>
+        <option id='et-1' value='1'>โรคพุ่มพวง / เอส แอล อี / S.L.E.</option>
+        <option id='et-2' value='2'>โรคกระดูกพรุน</option>
+        <option id='et-3' value='3'>ข้ออักเสบเรื้อรัง</option>
+        <option id='et-4' value='4'>ใช้ยาสเตียรอยด์ประจำ</option>
+        <option id='et-5' value='5'>โรคอื่นๆ ระบุ...</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- โรคอื่นๆ ระบุ... -->
+  <div id="etc2" class="form-group org none">
+    <div class="col-md-4 control-label"></div>
+    <div class="col-md-6"> 
+      <input placeholder="ระบุชื่อโรคอื่นๆ (#etc2)" type="text" class="form-control" id="et2" name="et2">
+    </div>
+    <div class="col-md-2"></div> 
+  </div>
+
+</div>  
+
